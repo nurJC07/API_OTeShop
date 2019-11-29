@@ -11,9 +11,17 @@ app.use(bodyParser.urlencoded({extended:false})); //Biar dari front end bisa kir
 app.use(bodyParser.json());//Untuk menerima json melalui req.body
 app.use(express.static('public')); //Untuk akses folder public
 
+const publicPath = path.join(__dirname,'..','public');
+
+app.get('*',)
+
 app.get('/', (req,res) => {
     res.send('<h3>Selamat Datang di API Purwadhikastore, dibuat menggunakan Node.js dengan database MySQL.</h3>');
 });
+
+app.get('*', (req,res) => {
+    res.sendFile(path.join(publicPath, 'index.html'))
+})
 
 const { 
     authRouter,
