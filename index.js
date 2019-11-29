@@ -15,18 +15,18 @@ app.get('/', (req,res) => {
     res.send('<h3>Selamat Datang di API Purwadhikastore, dibuat menggunakan Node.js dengan database MySQL.</h3>');
 });
 
-// const { 
-//     authRouter,
-//     productRouter,
-//     categoryRouter,
-//     cartRouter,
-//     transactionRouter,
-// } = require('./routers') // untuk route authcontoller
+const { 
+    authRouter,
+    productRouter,
+    categoryRouter,
+    cartRouter,
+    transactionRouter,
+} = require('./routers') // untuk route authcontoller
 
-// app.use ('/auth', authRouter)
-// app.use('/product', productRouter)
-// app.use('/category', categoryRouter)
-// app.use('/cart', cartRouter)
-// app.use('/transaction', transactionRouter)
+app.use ('/auth', authRouter)
+app.use('/product', productRouter)
+app.use('/category', categoryRouter)
+app.use('/cart', cartRouter)
+app.use('/transaction', transactionRouter)
 
 app.listen(PORT, () => console.log('Node is running, API active at port: ' + PORT));
