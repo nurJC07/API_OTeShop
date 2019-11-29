@@ -2,6 +2,10 @@
   "name": "oteshop",
   "version": "1.0.0",
   "description": "Back End for OTe Shop",
+  "engines": {
+    "npm" : "6.13.1",
+    "node": "8.12.0"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
