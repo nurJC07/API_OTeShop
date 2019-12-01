@@ -32,10 +32,10 @@ app.get('/', (req,res) => {
 // 	.set('view engine', 'ejs')
 // 	.get('/', (req, res) => res.render('pages/index'))
 
-app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', '*');
-    next();
-  });
+// app.use((req, res, next) => {
+//     res.header('Access-Control-Allow-Origin', '*');
+//     next();
+//   });
 
 const { 
     authRouter,
