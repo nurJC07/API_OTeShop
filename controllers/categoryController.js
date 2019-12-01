@@ -11,13 +11,6 @@ module.exports = {
         })   
     },
 
-    // getCategory: (req,res) => {
-    //     var sql = `SELECT * FROM category WHERE id = '${req.body.id}'`;
-    //     conn.query(sql, (err, results) => {
-    //         if(err) throw err;
-    //         res.send(results);
-    //     })   
-    // },
 
 addCategory: (req,res) => {
     try {
