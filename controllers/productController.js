@@ -64,7 +64,7 @@ module.exports = {
                     }
                    
                     console.log(results);
-                    sql =  `select * from product order by id`;
+                    sql =  `select * from product order by id Desc`;
                     conn.query(sql, (err, results1) => {
                         if(err) {
                             console.log(err.message);
