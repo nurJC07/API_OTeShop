@@ -19,23 +19,6 @@ app.get('/', (req,res) => {
     res.send('<h3>Selamat Datang di API Purwadhikastore, dibuat menggunakan Node.js dengan database MySQL.</h3>');
 });
 
-// app.get('*', (req,res) => {
-//     res.sendFile(path.join(publicPath, 'index.html'))
-// })
-
-// app.get('*', (req, res) => {
-//     res.sendFile(path.resolve(__dirname,"client","build","index.html"));
-//   });
-
-// express().use(express.static(path.join(__dirname, 'public')))
-// 	.set('views', path.join(__dirname, 'views'))
-// 	.set('view engine', 'ejs')
-// 	.get('/', (req, res) => res.render('pages/index'))
-
-// app.use((req, res, next) => {
-//     res.header('Access-Control-Allow-Origin', '*');
-//     next();
-//   });
 
 const { 
     authRouter,
