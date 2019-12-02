@@ -131,8 +131,8 @@ module.exports = {
                     
                     }
                 else {
-                    sql = `Update product set  nama='${data.nama}', harga=${data.harga}, description='${data.description}',
-                    categoryId=${data.categoryId} where id = ${req.params.id};`
+                    sql = `Update product set  nama="${data.nama}", harga=${data.harga}, description="${data.description}",
+                    namaCategory="${data.namaCategory}" where id = ${req.params.id};`
                     conn.query(sql, (err1,results2) => {
                     if(err1) {
                         return res.status(500).json({ 
@@ -162,6 +162,9 @@ module.exports = {
             }
         })
     },
+
+
+
 
     deleteProduct : (req,res) => {
         var productId = req.params.id;
@@ -205,7 +208,3 @@ module.exports = {
     }
     
     }
-
-
-
-

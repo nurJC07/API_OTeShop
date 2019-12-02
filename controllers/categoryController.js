@@ -111,7 +111,7 @@ editCategory : (req,res) => {
                 })
                 }
             else {
-                sql = `Update category set namaCategory='${data.namaCategory}' where id = ${categoryId};`
+                sql = `Update category set namaCategory="${data.namaCategory}" where id = ${categoryId};`
                 conn.query(sql, (err1,results1) => {
                 if(err1) {
                     return res.status(500).json({ 
