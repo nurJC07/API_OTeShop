@@ -60,7 +60,7 @@ module.exports = {
                     res.send({
                         username
                     })
-                    var linkverification = `http://localhost:3000/verified?username=${username}&password=${hashPassword}`;
+                    var linkverification = `https://oteshop.heroku.com/verified?username=${username}&password=${hashPassword}`;
                     var mailOption = {
                         from: 'Ote Shop <myjejakaki@gmail.com>',
                         to: email,
